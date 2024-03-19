@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+
+spring:
+
+  #config database
+  datasource:
+    url: jdbc:mysql://localhost:3306/security_demo?useSSL=false
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  # config hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+
